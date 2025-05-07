@@ -1,0 +1,51 @@
+{
+    "server": {
+      "name": "GreetingServer",
+      "description": "A server that provides greeting messages for cities",
+      "version": "1.0.0"
+    },
+    "tools": [
+      {
+        "name": "Greeting",
+        "description": "Provides greeting messages",
+        "commands": [
+          {
+            "name": "GetGreeting",
+            "description": "Get a greeting message for a city",
+            "parameters": [
+              {
+                "name": "city",
+                "type": "string",
+                "description": "The name of the city to greet"
+              }
+            ],
+            "returns": {
+              "type": "string",
+              "description": "The greeting message"
+            }
+          }
+        ]
+      },
+      {
+        "name": "SearchingLocalFiles",
+        "description": "Search local files",
+        "commands": [
+          {
+            "name": "SearchMarkdown",
+            "description": "find the word in local files",
+            "parameters": [
+              {
+                "name": "query",
+                "type": "string",
+                "description": "The word that needs to be searched"
+              }
+            ],
+            "returns": {
+              "type": "List<string>",
+              "description": "List of all files that has the searching word"
+            }
+          }
+        ]
+      }
+    ]
+  }
